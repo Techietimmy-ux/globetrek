@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobTrek</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> -->
+
+</head>
+
+<!-- icons -->
+<!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+stroke="currentColor" class="size-6">
+<path stroke-linecap="round" stroke-linejoin="round"
+    d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+</svg>
+
+<svg class="md:hidden toggle w-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none"
+viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg> -->
+
+
+
+<body class="font-mont mx-10">
+    <!-- nav contents -->
+    <nav class="content mt-5">
+        <div class="navTop flex items-center justify-between">
+            <div class="pageTitle text-blue-500 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 md:size-12">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                </svg>
+                <h1 class="text-xl md:text-5xl font-semibold">GlobeTrek</h1>
+
+            </div>
+
+            <ul class="hidden md:flex gap-5">
+                <li>Home</li>
+                <li>Destination</li>
+                <li>Deals</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+
+            <button class="btn hidden md:block md:me-20">Get started</button>
+
+            <div class="md:hidden">
+                <svg class="toggle w-12 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+
+        </div>
+
+        <ul class="hidden md:hidden mobileLink text-start bg-blue-300 p-2 rounded text-white">
+            <li>Home</li>
+            <li>Destination</li>
+            <li>Deals</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+
+
+    </nav>
+
+
+
+    <main>
+        <div class="headerContent mt-16 md:flex  justify-between items-center">
+            <div class="leftContent text-start">
+                <div class="font-medium text-5xl md:text-6xl">
+                    <h1 class="mb-5">Your Next </h1>
+
+                    <h1 class="text-blue-500 mb-5">Adventure <span class="text-gray-900 mt-5">Awaits</span> </h1>
+
+
+                </div>
+
+                <p class="text-start md:para md:text-xl text-gray-600">Discover unbeatable deals on flight, hotels, and
+                    experience. <br>
+                    Whether its a beach holiday or a
+                    mountain trek, explore, <br> compare, and block with ease.</p>
+                <div class="flex mt-5 btn w-fit">
+                    <span>Start your journey
+
+                    </span>
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg></span>
+
+                </div>
+
+                <div class="people md:flex mt-7  items-center md:gap-36">
+                    <div class="peopleImg relative">
+                        <img src="./img/profile (1).jpeg" alt="" class="w-10 h-10 rounded-full">
+                        <img src="./img/profile (2).jpeg" alt="" class="w-10 h-10 rounded-full absolute top-0 left-8">
+                        <img src="./img/profile (3).jpeg" alt="" class="w-10 h-10 rounded-full absolute top-0 left-16">
+                        <img src="./img/profile (4).jpeg" alt="" class="w-10 h-10 rounded-full absolute top-0 left-24">
+                        <img src="./img/profile (5).jpeg" alt="" class="w-10 h-10 rounded-full absolute top-0 left-32">
+                    </div>
+                    <p class="text-lg mt-2">Over 3000+ satisfied customer</p>
+                </div>
+
+            </div>
+
+            <div class="rightContent hidden md:grid grid-cols-2 gap-4">
+                <div> <img src="./img/banner 1.png" alt="" class="w-fit"></div>
+                <div class="bannerTwo grid">
+                    <img src="./img/banner 2.png" alt="" class="w-fit">
+                    <img src="./img/banner 3.png" alt="" class="w-fit">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- little form just below the hearder -->
+        <form
+            class="searchLocation text-start grid grid-cols-1 gap-6 md:flex md:justify-between md:mx-40 mt-10 md:shadow-lg p-6 md:border rounded-3xl">
+            <div class="find">
+                <p class="font-semibold">find your</p>
+                <h2 class="font-bold">DESTINATION</h2>
+
+            </div>
+            <div class="destination flex gap-24">
+                <div>
+                    <label class="block font-bold">Destination</label>
+                    <select id="countries" class="border md:border-0 p-2 md:p-0 w-72 md:w-fit rounded-xl">
+                        <option selected>Enter City Name</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label class="block font-bold">Date</label>
+                <select id="date" class="border rounded-xl md:border-0 p-2 md:p-0 w-72 md:w-fit">
+                    <option selected>from-To</option>
+
+
+                </select>
+            </div>
+
+            <div>
+                <label class="block font-bold">Guest</label>
+                <select id="guest" class="border  rounded-xl md:border-0 p-2 md:p-0 w-72 md:w-fit">
+                    <option selected>No. of Guest</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <div>
+                <button class="flex items-center btn gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+
+                    <span>Search</span>
+                </button>
+            </div>
+
+        </form>
+
+        <div class="whoWeAre mt-20 md:grid grid-cols-2 items-center p-5">
+            <div>
+                <img src="./img/who we are.png" alt="who we are">
+
+            </div>
+            <div>
+                <h1 class="text-3xl md:text-6xl font-semibold mb-5 mt-5">Who We Are</h1>
+                <p class="text-xl md:para mb-7 text-gray-500">At GlobeTrek, we are passionate about making travel easy,
+                    affordable, anf
+                    memorable. With years of Experience and a deep love for exploring the world, We have built a
+                    platform that brings the best travel deals right to your fingertips.</p>
+
+                <div class="summary text-center grid grid-cols-1 gap-4  md:flex md:justify-between mb-10">
+                    <div class="TDC">
+                        <h1 class="text-5xl p-2 md:text-6xl ">10k+</h1>
+                        <p class="text-gray-500">Happy Traveller</p>
+                    </div>
+                    <div class="TDC">
+                        <h1 class="text-5xl p-2 md:text-6xl">3k+</h1>
+                        <p class="text-gray-500">Destination Worldwide</p>
+                    </div>
+                    <div class="TDC">
+                        <h1 class="text-5xl p-2 md:text-6xl">95%</h1>
+                        <p class="text-gray-500">Customer Satisfaction rate</p>
+                    </div>
+                </div>
+
+                <a href="facebook.com">
+                    <button
+                        class=" bg-white text-blue-500 p-3 rounded-full px-4 font-medium hover:transform ease-out duration-300 flex gap-3 border-2 border-blue-500 hover:bg-blue-500 hover:text-white mx-auto md:mx-0">
+                        Learn more about us
+                        <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg></span>
+                    </button>
+                </a>
+
+
+            </div>
+        </div>
+
+        <div class="commitment mt-20 text-center">
+            <h1 class="text-3xl md:text-5xl font-semibold mb-5">Our Commitment to You</h1>
+            <p class="text-xl md:para md:px-64 text-gray-500">We're dedicated to making your travel experience seamless,
+                safe and
+                enjoyable. Count
+                on us for transparent pricing, exceptinal support, and unforgottable journeys. </p>
+        </div>
+
+        <div class="commitmentCard grid grid-cols-1 gap-5 md:grid-cols-4 mt-10 md:gap-7">
+            <div class="card text-center">
+                <div class="p-4 bg-blue-100 w-fit rounded-full mx-auto mb-4">
+                    <svg class=" w-5 text-blue-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                    </svg>
+                </div>
+                <p class="font-semibold mb-3 text-2xl">Easy Booking</p>
+                <p class="text-xl text-gray-700">Easily book, manage, and enjoy your trips in on place</p>
+
+            </div>
+            <div class="card text-center">
+                <div class="p-4 bg-blue-100 w-fit rounded-full mx-auto mb-4">
+                    <svg class="w-5 text-blue-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                            d="M7.502 6h7.128A3.375 3.375 0 0 1 18 9.375v9.375a3 3 0 0 0 3-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 0 0-.673-.05A3 3 0 0 0 15 1.5h-1.5a3 3 0 0 0-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6ZM13.5 3A1.5 1.5 0 0 0 12 4.5h4.5A1.5 1.5 0 0 0 15 3h-1.5Z"
+                            clip-rule="evenodd" />
+                        <path fill-rule="evenodd"
+                            d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V9.375Zm9.586 4.594a.75.75 0 0 0-1.172-.938l-2.476 3.096-.908-.907a.75.75 0 0 0-1.06 1.06l1.5 1.5a.75.75 0 0 0 1.116-.062l3-3.75Z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                </div>
+                <p class="font-semibold mb-3 text-2xl">Airport Pickup</p>
+                <p class="text-xl text-gray-700">We provide transport from the airport to the hotel</p>
+
+            </div>
+            <div class="card text-center">
+                <div class="p-4 bg-blue-100 w-fit rounded-full mx-auto mb-4">
+                    <svg class="w-5 text-blue-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                            d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                </div>
+                <p class="font-semibold mb-3 text-2xl">Support</p>
+                <p class="text-xl text-gray-700">24/7 customer service to assist you anytime anywhere</p>
+
+            </div>
+            <div class="card text-center">
+                <div class="p-4 bg-blue-100 w-fit rounded-full mx-auto mb-4">
+                    <svg class="w-5 text-blue-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                            d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z"
+                            clip-rule="evenodd" />
+                        <path
+                            d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
+                    </svg>
+
+                </div>
+                <p class="font-semibold mb-3 text-2xl">Best Tour Guide</p>
+                <p class="text-xl text-gray-700">our tour guide are ready to guide your trip</p>
+
+            </div>
+        </div>
+
+        <div class="topDestination mt-20">
+            <h1 class="text-2xl md:text-5xl font-semibold text-center mb-5">Explore Top Destination</h1>
+            <p class="text-s md:text-xl text-gray-700 text-center md:px-72 mb-5">Discover the world's most breathtaking
+                places, hand
+                picked for your next adventure.</p>
+
+            <div class="cardDestination grid grid-cols-1 gap-5  md:grid-cols-3 md:gap-5">
+                <div class="destinationOne">
+                    <div class="hidden md:block">
+                        <h1 class="text-2xl font-semibold mb-5">Santorini, Greece</h1>
+                        <p class="mb-3">Greece is a country steeped in ancient history and culture, located at the
+                            crossroads of Europe, Asia, and Africa. greece is<span
+                                class="font-bold text-blue-500 ReadMoreText cursor-pointer">...Read More</span> <span
+                                class="hidden hiddenContent"> Known
+                                as
+                                the cradle of Western civilization, it is the birthplace of democracy, philosophy, and
+                                the
+                                Olympic Games. Greece's landscape is diverse, featuring rugged mountains, serene
+                                coastlines,
+                                and over 6,000 islands, with Crete, Rhodes, and Santorini being among the most famous.
+                                The
+                                capital, Athens, is a vibrant city where ancient landmarks like the Parthenon stand
+                                alongside modern architecture. Greek cuisine is celebrated worldwide, with dishes like
+                                moussaka, souvlaki, and baklava. The country is also known for its warm Mediterranean
+                                climate, which makes it a popular destination for tourists year-round. Rich in
+                                mythology,
+                                Greece offers countless archaeological sites, such as the ruins of Delphi and the Palace
+                                of
+                                Knossos. The country's vibrant traditions, including music, dance, and festivals,
+                                reflect
+                                its deep-rooted cultural heritage. Greece's azure waters, scenic landscapes, and rich
+                                history create a unique and unforgettable experience for visitors.
+                                <!-- <span
+                                class="font-bold text-blue-500 cursor-pointer hideText greece">...Hide Text</span> </span> -->
+                        </p>
+                    </div>
+                    <img src="./img/top 1.png" alt="" class="w-full">
+                    <div class="md:hidden">
+                        <h1 class="text-2xl font-semibold mb-5 mt-3">Santorini, Greece</h1>
+                        
+                        <p class="mb-3 ">Greece is a country steeped in ancient history and culture, located at the
+                            crossroads of Europe, Asia, and Africa. greece is<span
+                                class="font-bold text-blue-500 ReadMoreText cursor-pointer">...Read More</span> <span
+                                class="hidden hiddenContent"> Known
+                                as
+                                the cradle of Western civilization, it is the birthplace of democracy, philosophy, and
+                                the
+                                Olympic Games. Greece's landscape is diverse, featuring rugged mountains, serene
+                                coastlines,
+                                and over 6,000 islands, with Crete, Rhodes, and Santorini being among the most famous.
+                                The
+                                capital, Athens, is a vibrant city where ancient landmarks like the Parthenon stand
+                                alongside modern architecture. Greek cuisine is celebrated worldwide, with dishes like
+                                moussaka, souvlaki, and baklava. The country is also known for its warm Mediterranean
+                                climate, which makes it a popular destination for tourists year-round. Rich in
+                                mythology,
+                                Greece offers countless archaeological sites, such as the ruins of Delphi and the Palace
+                                of
+                                Knossos. The country's vibrant traditions, including music, dance, and festivals,
+                                reflect
+                                its deep-rooted cultural heritage. Greece's azure waters, scenic landscapes, and rich
+                                history create a unique and unforgettable experience for visitors.
+
+                                <!-- <span
+                                class="font-bold text-blue-500 cursor-pointer hideText greece">...Hide Text</span>  -->
+                                </span>
+                            
+                               
+                               
+                        </p>
+                    </div>
+                </div>
+                <div class="destinationTwo">
+                    <img src="./img/top 2.png" alt="" class="w-full">
+                    <div>
+                        <h1 class="text-2xl font-semibold mt-5">Kyoto, Japan</h1>
+                        <p class="mb-3">kyoto is a is a country steeped in ancient history and culture, located at the
+                            crossroads of Europe, Asia, and Africa. also kyoto japan<span
+                                class="font-bold text-blue-500 ReadMoreText cursor-pointer">...Read More</span> <span class="hidden hiddenContent"> Known
+                                as
+                                the cradle of Western civilization, it is the birthplace of democracy, philosophy, and
+                                the
+                                Olympic Games. Greece's landscape is diverse, featuring rugged mountains, serene
+                                coastlines,
+                                and over 6,000 islands, with Crete, Rhodes, and Santorini being among the most famous.
+                                The
+                                capital, Athens, is a vibrant city where ancient landmarks like the Parthenon stand
+                                alongside modern architecture. Greek cuisine is celebrated worldwide, with dishes like
+                                moussaka, souvlaki, and baklava. The country is also known for its warm Mediterranean
+                                climate, which makes it a popular destination for tourists year-round. Rich in
+                                mythology,
+                                Greece offers countless archaeological sites, such as the ruins of Delphi and the Palace
+                                of
+                                Knossos. The country's vibrant traditions, including music, dance, and festivals,
+                                reflect
+                                its deep-rooted cultural heritage. Greece's azure waters, scenic landscapes, and rich
+                                history create a unique and unforgettable experience for visitors.
+                                <!-- <span
+                                class="font-bold text-blue-500 cursor-pointer hideText japan">...Hide Text</span>  </span> -->
+                        </p>
+                    </div>
+                </div>
+                <div class="destinationThree">
+                    <div class="hidden md:block">
+                        <h1 class="text-2xl font-semibold mb-5">Bora Bora, French Polysenia</h1>
+                        <p class="mb-3">Bora Bora, French Polysenia kyoto is a country steeped in ancient history and
+                            culture, located at the crossroads of Europe, Asia, and Africa.<span
+                                class="font-bold text-blue-500 ReadMoreText cursor-pointer">...Read More</span> <span
+                                class="hidden hiddenContent"> Known
+                                as
+                                the cradle of Western civilization, it is the birthplace of democracy, philosophy, and
+                                the
+                                Olympic Games. Greece's landscape is diverse, featuring rugged mountains, serene
+                                coastlines,
+                                and over 6,000 islands, with Crete, Rhodes, and Santorini being among the most famous.
+                                The
+                                capital, Athens, is a vibrant city where ancient landmarks like the Parthenon stand
+                                alongside modern architecture. Greek cuisine is celebrated worldwide, with dishes like
+                                moussaka, souvlaki, and baklava. The country is also known for its warm Mediterranean
+                                climate, which makes it a popular destination for tourists year-round. Rich in
+                                mythology,
+                                Greece offers countless archaeological sites, such as the ruins of Delphi and the Palace
+                                of
+                                Knossos. The country's vibrant traditions, including music, dance, and festivals,
+                                reflect
+                                its deep-rooted cultural heritage. Greece's azure waters, scenic landscapes, and rich
+                                history create a unique and unforgettable experience for visitors.
+                                <!-- <span
+                                class="font-bold text-blue-500 cursor-pointer hideText">...Hide Text</span>  </span></p> -->
+                    </div>
+                    <img src="./img/top 3.png" alt="" class="w-full">
+                    <div class="md:hidden">
+                        <h1 class="text-2xl font-semibold mb-5 mt-3">Bora Bora, French Polysenia</h1>
+                        <p class="mb-3">Bora Bora, French Polysenia kyoto is a country steeped in ancient history and
+                            culture, located at the crossroads of Europe, Asia, and Africa.<span
+                                class="font-bold text-blue-500 ReadMoreText cursor-pointer">...Read More</span> <span
+                                class="hidden hiddenContent"> Known
+                                as
+                                the cradle of Western civilization, it is the birthplace of democracy, philosophy, and
+                                the
+                                Olympic Games. Greece's landscape is diverse, featuring rugged mountains, serene
+                                coastlines,
+                                and over 6,000 islands, with Crete, Rhodes, and Santorini being among the most famous.
+                                The
+                                capital, Athens, is a vibrant city where ancient landmarks like the Parthenon stand
+                                alongside modern architecture. Greek cuisine is celebrated worldwide, with dishes like
+                                moussaka, souvlaki, and baklava. The country is also known for its warm Mediterranean
+                                climate, which makes it a popular destination for tourists year-round. Rich in
+                                mythology,
+                                Greece offers countless archaeological sites, such as the ruins of Delphi and the Palace
+                                of
+                                Knossos. The country's vibrant traditions, including music, dance, and festivals,
+                                reflect
+                                its deep-rooted cultural heritage. Greece's azure waters, scenic landscapes, and rich
+                                history create a unique and unforgettable experience for visitors. 
+                                <!-- <span
+                                class="font-bold text-blue-500 cursor-pointer hideText">...Hide Text</span> </span></p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="facebook.com">
+            <button
+                class="mt-10 mx-auto bg-white text-blue-500 p-3 rounded-full px-4 font-medium hover:transform ease-out duration-300 flex gap-3 border-2 border-blue-500 hover:bg-blue-500 hover:text-white">
+                See all
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg></span>
+            </button>
+        </a>
+
+        <div class="exclusiveDeals mt-20">
+
+            <h1 class="text-3xl md:text-5xl font-medium text-center mb-5">Exclusive Travel Deals</h1>
+            <p class="text-xl text-gray-500 text-center md:px-52 mb-10">Explore hand picked travel deals offering
+                incredible
+                savings on fligts, hotels, and vacation pakages to top destinations, whether its aquick getaway or a
+                dream vacation, This limited-time offers make your next adventure more affordable and unforgottable, Act
+                fast, these deals wont last long!</p>
+
+            <div class="dealsCard">
+                <div class="FirstSection grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="card border-2 rounded-3xl p-1">
+                        <img src="./img/travel 1.png" alt="" class="w-full ">
+                        <div class="placePricePerson flex justify-between mt-2 pb-5">
+                            <div class="place">
+                                <h1 class="font-semibold">Santorini Greece</h1>
+                                <div class="date flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="text-gray-400">Two days</div>
+                                </div>
+
+                            </div>
+                            <div class="price">
+                                <h1 class="font-semibold text-orange-600 text-end">$425</h1>
+                                <div class="text-gray-400">
+                                    Per Person
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-2 rounded-3xl p-1">
+                        <img src="./img/travel  2.png" alt="" class="w-full ">
+                        <div class="placePricePerson flex justify-between mt-2 pb-5">
+                            <div class="place">
+                                <h1 class="font-semibold">Rio de Janeiro, Brazil</h1>
+                                <div class="date flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="text-gray-400">Four days</div>
+                                </div>
+
+                            </div>
+                            <div class="price">
+                                <h1 class="font-semibold text-orange-600 text-end">$1,125</h1>
+                                <div class="text-gray-400">
+                                    Per Person
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-2 rounded-3xl p-1">
+                        <img src="./img/travel 3.png" alt="" class="w-full ">
+                        <div class="placePricePerson flex justify-between mt-2 pb-5">
+                            <div class="place">
+                                <h1 class="font-semibold">Paris, France</h1>
+                                <div class="date flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="text-gray-400">Two days</div>
+                                </div>
+
+                            </div>
+                            <div class="price">
+                                <h1 class="font-semibold text-orange-600 text-end">$425</h1>
+                                <div class="text-gray-400">
+                                    Per Person
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-2 rounded-3xl p-1">
+                        <img src="./img/travel 4.png" alt="" class="w-full ">
+                        <div class="placePricePerson flex justify-between mt-2 pb-5">
+                            <div class="place">
+                                <h1 class="font-semibold">NewYork City, Usa</h1>
+                                <div class="date flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="text-gray-400">Two days</div>
+                                </div>
+
+                            </div>
+                            <div class="price">
+                                <h1 class="font-semibold text-orange-600 text-end">$425</h1>
+                                <div class="text-gray-400">
+                                    Per Person
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="SecondSection grid grid-cols-1 md:grid-cols-4 gap-4 mt-10">
+                    <div class="card border-2 rounded-3xl p-1">
+                        <img src="./img/travel 5.png" alt="" class="w-full ">
+                        <div class="placePricePerson flex justify-between mt-2 pb-5">
+                            <div class="place">
+                                <h1 class="font-semibold">Dubai, UAE</h1>
+                                <div class="date flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="text-gray-400">Two days</div>
+                                </div>
+
+                            </div>
+                            <div class="price">
+                                <h1 class="font-semibold text-orange-600 text-end">$700</h1>
+                                <div class="text-gray-400">
+                                    Per Person
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-2 rounded-3xl p-1">
+                        <img src="./img/travel 6.png" alt="" class="w-full ">
+                        <div class="placePricePerson flex justify-between mt-2 pb-5">
+                            <div class="place">
+                                <h1 class="font-semibold">Rome, Italy</h1>
+                                <div class="date flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="text-gray-400">Four days</div>
+                                </div>
+
+                            </div>
+                            <div class="price">
+                                <h1 class="font-semibold text-orange-600 text-end">$800</h1>
+                                <div class="text-gray-400">
+                                    Per Person
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-2 rounded-3xl p-1">
+                        <img src="./img/travel 7.png" alt="" class="w-full ">
+                        <div class="placePricePerson flex justify-between mt-2 pb-5">
+                            <div class="place">
+                                <h1 class="font-semibold">Paris, France</h1>
+                                <div class="date flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="text-gray-400">Two days</div>
+                                </div>
+
+                            </div>
+                            <div class="price">
+                                <h1 class="font-semibold text-orange-600 text-end">$500</h1>
+                                <div class="text-gray-400">
+                                    Per Person
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-2 rounded-3xl p-1">
+                        <img src="./img/travel 8.png" alt="" class="w-full ">
+                        <div class="placePricePerson flex justify-between mt-2 pb-5">
+                            <div class="place">
+                                <h1 class="font-semibold">Lagos, Nigeria</h1>
+                                <div class="date flex gap-2">
+                                    <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="text-gray-400">Two days</div>
+                                </div>
+
+                            </div>
+                            <div class="price">
+                                <h1 class="font-semibold text-orange-600 text-end">$425</h1>
+                                <div class="text-gray-400">
+                                    Per Person
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="facebook.com">
+                    <button
+                        class="mt-10 mx-auto bg-white text-blue-500 p-3 rounded-full px-4 font-medium hover:transform ease-out duration-300 flex gap-3 border-2 border-blue-500 hover:bg-blue-500 hover:text-white">
+                        See all
+                        <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg></span>
+                    </button>
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <div class="travelStories mt-20 hidden md:block">
+            <h1 class="text-5xl font-medium text-center mb-5">Explore our latest travel stories</h1>
+            <p class="text-xl text-gray-500 text-center  mb-10">Get insired by travel tips, destination guides, and more
+                from our expert bloggers</p>
+
+            <div class="storiesImage grid grid-cols-2 gap-4">
+                <div class="border-2 rounded-2xl">
+                    <img src="./img/explore 1.png" alt="" class="w-full">
+
+                    <div class="notes mt-3 ms-3 flex gap-4 mb-3">
+                        <p class="p-2 text-gray-600 bg-gray-200 w-fit border-2 rounded-xl px-4 text-xl">Travel Tips</p>
+                        <p class="p-2 text-gray-600 bg-gray-200 w-fit border-2 rounded-xl px-4 text-xl">Europe</p>
+                        <p class="p-2 text-gray-600 bg-gray-200 w-fit border-2 rounded-xl px-4 text-xl">Adventure</p>
+
+                    </div>
+                    <div class="flex justify-between me-3 text-2xl">
+                        <div>
+                            <h1 class="capitalize ms-3 font-medium ">10 Hidden gems you must visit in europe</h1>
+                            <p class="ms-3 text-gray-500 mb-2">Explore the lesser-known wonders of Europe, from <br>
+                                quant villages to breathtaking
+                                landscapes..</p>
+
+                        </div>
+
+                        <button>
+                            <svg class="w-10 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+                <div class="grid gap-3">
+                    <div class="border-2 rounded-2xl">
+                        <img src="./img/explore 2.png" alt="" class="w-full">
+
+                        <div class="notes mt-3 ms-3 flex gap-4 mb-3">
+                            <p class="p-2 text-gray-600 bg-gray-200 w-fit border-2 rounded-xl px-4 text-xl">Travel Tips
+                            </p>
+                            <p class="p-2 text-gray-600 bg-gray-200 w-fit border-2 rounded-xl px-4 text-xl">budget
+                                travels</p>
+                            <p class="p-2 text-gray-600 bg-gray-200 w-fit border-2 rounded-xl px-4 text-xl">Experience
+                            </p>
+
+                        </div>
+                        <div class="flex justify-between me-3 text-2xl">
+                            <div>
+                                <h1 class="capitalize ms-3 font-medium ">how to travel on a budget</h1>
+                                <p class="ms-3 text-gray-500 mb-2">Explore the lesser-known wonders of Europe, from <br>
+                                    quant villages to breathtaking
+                                    landscapes..</p>
+
+                            </div>
+
+                            <button>
+                                <svg class="w-10 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                            </button>
+
+
+                        </div>
+
+                    </div>
+                    <div class="border-2 rounded-2xl">
+                        <img src="./img/explore 3.png" alt="" class="w-full">
+
+                        <div class="notes mt-3 ms-3 flex gap-4 mb-3">
+                            <p class="p-2 text-gray-600 bg-gray-200 w-fit border-2 rounded-xl px-4 text-xl">Asia</p>
+                            <p class="p-2 text-gray-600 bg-gray-200 w-fit border-2 rounded-xl px-4 text-xl">Solo Travel
+                            </p>
+                            <p class="p-2 text-gray-600 bg-gray-200 w-fit border-2 rounded-xl px-4 text-xl">Guide</p>
+
+                        </div>
+                        <div class="flex justify-between me-3 text-2xl">
+                            <div>
+                                <h1 class="capitalize ms-3 font-medium ">the ultimate guide to solo-travels</h1>
+                                <p class="ms-3 text-gray-500 mb-2">Explore the lesser-known wonders of Europe, from <br>
+                                    quant villages to breathtaking
+                                    landscapes..</p>
+
+                            </div>
+
+                            <button>
+                                <svg class="w-10 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                            </button>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="facebook.com">
+                <button
+                    class="mt-10 mx-auto bg-white text-blue-500 p-3 rounded-full px-4 font-medium hover:transform ease-out duration-300 flex gap-3 border-2 border-blue-500 hover:bg-blue-500 hover:text-white">
+                    Read all
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg></span>
+                </button>
+            </a>
+        </div>
+
+        <div class="whatTravellerSay mt-20">
+            <h1 class="md:text-5xl text-3xl font-medium text-center mb-5 capitalize">what our travelers say</h1>
+            <p class="text-xl text-gray-500 text-center mb-10 md:mx-80">Real stories from real travellers, see why
+                thousands of adventurers, choose us to create their unforggortable experience</p>
+
+            <div class="cards grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="card border rounded-xl p-4">
+                    <div class="flex gap-2 items-center">
+                        <img src="./img/profile (6).jpeg" alt="" class="w-10 h-10 rounded-full">
+                        <div>
+                            <h1 class="font-semibold">Yordanos Assefa</h1>
+                            <p>Tokyo Japan</p>
+                        </div>
+                    </div>
+                    <p class="text-xl text-gray-500 mt-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde ipsa deserunt earum cumque
+                        commodi veritatis!
+                    </p>
+                </div>
+                <div class="card border rounded-xl p-4">
+                    <div class="flex gap-2 items-center">
+                        <img src="./img/profile (1).jpeg" alt="" class="w-10 h-10 rounded-full">
+                        <div>
+                            <h1 class="font-semibold">Sibusiso Mkhize</h1>
+                            <p>Paris France</p>
+                        </div>
+                    </div>
+                    <p class="text-xl text-gray-500 mt-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde ipsa deserunt earum cumque
+                        commodi veritatis!
+                    </p>
+                </div>
+                <div class="card border rounded-xl p-4">
+                    <div class="flex gap-2 items-center">
+                        <img src="./img/profile (8).jpeg" alt="" class="w-10 h-10 rounded-full">
+                        <div>
+                            <h1 class="font-semibold">Yordanos Assefa</h1>
+                            <p>Santorini Greece</p>
+                        </div>
+                    </div>
+                    <p class="text-xl text-gray-500 mt-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde ipsa deserunt earum cumque
+                        commodi veritatis!
+                    </p>
+                </div>
+            </div>
+
+            <div class="md:flex gap-4 justify-center mt-6 hidden">
+
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 border border-blue-500 text-blue-500 rounded-full">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+
+                </button>
+
+                <button>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 border border-blue-500 text-blue-500 rounded-full">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+            </div>
+
+            <a href="facebook.com" class="block md:hidden">
+                <button
+                    class=" bg-white text-blue-500 p-3 rounded-full px-4 font-medium hover:transform ease-out duration-300 flex gap-3 border-2 border-blue-500 hover:bg-blue-500 hover:text-white mx-auto md:mx-0 mt-5">
+                    See More
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg></span>
+                </button>
+            </a>
+
+
+        </div>
+
+        <div class="questions mt-20">
+            <h1 class="md:text-5xl text-2xl font-semibold md:font-medium text-center mb-5 capitalize">frequently asked
+                questions</h1>
+            <p class="text-xl text-gray-500 text-center  mb-10 md:mx-80">Have questions about your upcoming trip? we've
+                got
+                you covered! Below are some of the most common queries we receive.</p>
+
+            <!-- accordion -->
+
+            <div class="md:mx-40  mt-15">
+                <div class="divide-y divide-gray-100">
+                    <details class="group">
+                        <summary
+                            class="flex cursor-pointer list-none items-center justify-between py-4 text-lg text-secondary-900 group-open:text-primary-500 font-semibold">
+                            What is the best way to book a trip?
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="block h-5 w-5 group-open:hidden">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="hidden h-5 w-5 group-open:block">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="pb-4 text-secondary-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempore repellat quisquam, et cum distinctio consequatur quas maiores amet aliquid totam
+                            sunt! Mollitia beatae impedit ad reprehenderit! Amet quas voluptatum numquam.</div>
+                    </details>
+                    <details class="group">
+                        <summary
+                            class="flex cursor-pointer list-none items-center justify-between py-4 text-lg font-semibold text-secondary-900 group-open:text-primary-500">
+                            Do you offer travel insurance?
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="block h-5 w-5 group-open:hidden">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="hidden h-5 w-5 group-open:block">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="pb-4 text-secondary-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Eum asperiores esse quis. Laborum possimus commodi reiciendis aut odit ab quaerat eveniet
+                            quidem iusto optio nemo ea nam dicta aspernatur, similique fugit, aliquid inventore
+                            voluptatibus! Iste repudiandae temporibus ea doloremque maiores?</div>
+                    </details>
+                    <details class="group">
+                        <summary
+                            class="flex cursor-pointer list-none items-center justify-between py-4 text-lg font-semibold text-secondary-900 group-open:text-primary-500">
+                            what should i do if i need help during my trip?
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="block h-5 w-5 group-open:hidden">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="hidden h-5 w-5 group-open:block">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="pb-4 text-secondary-500">This is the third item's accordion body.</div>
+                    </details>
+                    <details class="group">
+                        <summary
+                            class="flex cursor-pointer list-none items-center justify-between py-4 text-lg font-semibold text-secondary-900 group-open:text-primary-500">
+                            Are thhe any hidden fees?
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="block h-5 w-5 group-open:hidden">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="hidden h-5 w-5 group-open:block">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="pb-4 text-secondary-500">This is the third item's accordion body.</div>
+                    </details>
+                    <details class="group">
+                        <summary
+                            class="flex cursor-pointer list-none items-center justify-between py-4 text-lg font-semibold text-secondary-900 group-open:text-primary-500">
+                            can i cancel or change my booking?
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="block h-5 w-5 group-open:hidden">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="hidden h-5 w-5 group-open:block">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="pb-4 text-secondary-500">This is the third item's accordion body.</div>
+                    </details>
+                    <details class="group">
+                        <summary
+                            class="flex cursor-pointer list-none items-center justify-between py-4 text-lg font-semibold text-secondary-900 group-open:text-primary-500">
+                            How can i find the best deals?
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="block h-5 w-5 group-open:hidden">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="hidden h-5 w-5 group-open:block">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="pb-4 text-secondary-500">This is the third item's accordion body.</div>
+                    </details>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+
+    <footer class="mt-20 mb-10 grid grid-cols-1 md:grid-cols-3 border p-5 rounded-2xl">
+        <div class="newsLetter col-span-1">
+            <h1 class="text-4xl md:text-5xl font-medium">GlobeTrek</h1>
+
+            <p class="para mt-20 mb-5">Stay updated with latest Travel Deals</p>
+            <form class="newsLetter grid grid-cols-1 md:grid-cols-2 items-center">
+
+                <input class="p-3 mt-10" type="email" name="" id="" placeholder="Enter you email">
+
+                <!-- <hr> -->
+
+                <button
+                    class="mt-10 md:mx-auto w-fit bg-white text-gray-700 p-3 rounded-full px-4 font-medium hover:transform ease-out duration-300 flex gap-3 border-2 border-gray-500 hover:bg-gray-700 hover:text-white">
+                    Subscribe
+                    <span></span>
+                </button>
+
+            </form>
+        </div>
+
+        <div class="grid md:grid-cols-3 col-span-2">
+            <div class="quickLinks text-xl md:text-2xl md:ms-10">
+                <h1 class="font-semibold mb-4 mt-5">Quick Links</h1>
+                <ul class="grid grid-cols-1 gap-5 text-gray-700">
+                    <li>Home</li>
+                    <li>Destination</li>
+                    <li>Specials Deals</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="policies text-xl md:text-2xl md:ms-5 mt-3">
+                <h1 class="font-semibold mb-4">Policies</h1>
+                <ul class="grid grid-cols-1 gap-5 text-gray-700">
+                    <li>Terms of Services</li>
+                    <li>Privacy</li>
+                    <li>Cookie Policy</li>
+
+                </ul>
+            </div>
+            <div class="socials mt-5">
+                <div class="socialLinks flex gap-7 md:justify-center">
+                    <svg class="w-5 md:w-10" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#74C0FC"
+                            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                    </svg>
+                    <svg class="w-5 md:w-10" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    </svg>
+
+                    <svg class="w-5 md:w-10" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+
+                </div>
+
+                <p class="para mt-10 md:text-center">Discover our apps</p>
+
+                <div class="flex gap-2 mx-14 me-28 mb-6 md:hidden">
+
+
+                    <a href="facebook.com">
+                        <button
+                            class="mt-10 mx-auto bg-dark-600 text-white rounded-l px-4 font-medium flex gap-3 items-center w-40 py-2">
+                            <svg class="w-10" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#f0f2f5"
+                                    d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" />
+                            </svg>
+
+
+
+                            <span class="grid grid-cols-1 text-start">
+                                <p class="text-xs">Get it on</p>
+                                <P class="text-s">GooglePlay</P>
+                            </span>
+                        </button>
+                    </a>
+                    <a href="facebook.com">
+                        <button
+                            class="mt-10  mx-auto bg-dark-600 text-white rounded-l px-4 font-medium flex gap-3 items-center w-40">
+                            <svg class="w-10" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+                            </svg>
+
+
+
+                            <span class="grid grid-cols-1 text-start">
+                                <p class="text-xs">Download on the</p>
+                                <P class="text-s">AppStore</P>
+                            </span>
+                        </button>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

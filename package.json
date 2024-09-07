@@ -1,0 +1,27 @@
+{
+  "name": "globetrek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Techietimmy-ux/globetrek.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Techietimmy-ux/globetrek/issues"
+  },
+  "homepage": "https://github.com/Techietimmy-ux/globetrek#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "@material-tailwind/html": "^2.3.0",
+    "@material-tailwind/react": "^2.1.10"
+  }
+}
